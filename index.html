@@ -51,7 +51,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                   <a class="nav-link tm-nav-link" href="#gallery">Productos</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#test">test</a>
+                  <a class="nav-link tm-nav-link" href="#Valores">Valores</a>
               </li>
 			  <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#contact">Contacto</a>
@@ -67,11 +67,6 @@ https://www.tooplate.com/view/2117-infinite-loop
 			<p class="tm-hero-subtitle">
 				Sustainable and Healthy Packaging
                <br>El valor de la experiencia
-			   <div class="logo_container">
-				<span class="logo_helper"></span>
-						<img src="img/logo_solo.jpg" width="1160" height="500" alt="SAHP (Sustainable and Healthy Packaging)" id="logo" data-height-percentage="30" data-actual-width="1903" data-actual-height="817.609">
-					</a>
-			</div>
 			</p>
         </div>        
       </div>
@@ -297,6 +292,35 @@ Ubicados en barcelona, atendemos eficazmente el mercado europeo, directamente o 
           </div>
       </div>
     </section>
+	
+	<section id="valores" class="tm-section-pad-top tm-parallax-2">      
+      <div class="container tm-valores-content">
+        <div class="row">
+          <div class="col-lg-12 tm-content-box">
+            <h2 class="text-white text-center mb-4 tm-section-title">Nuestros Valores</h2>
+            <p class="mx-auto tm-section-desc text-center">
+                Nuestros productos son aptos para alimentos frios y calientes. Además de ser sostenibles y apilables, lo que favorece una optimización máxima de espacio en el envio y almacenaje.
+              </p>
+            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
+              <div class="tm-valores-carousel">
+                <figure class="tm-valores-item">
+                  <img src="img/tray_vegetables.jpg" alt="Image" class="img-fluid mx-auto">
+                  <blockquote>Frutas y Verduras. Nuestros modelos se pueden diseñar a medida para adecuarse al tamaño de la fruta, necesidades de ventilación y demás demandas del producto y del cliente. Exposición perfecta y visible de la fruta y verdura en los lineales.</blockquote>
+                  <figcaption>Hortofrutícola</figcaption>
+                </figure>
+
+                <figure class="tm-valores-item">
+                  <img src="img/tray_chocolate.jpg" alt="Image" class="img-fluid mx-auto">
+                  <blockquote>Galletas, bolleria, tartas, bizcochos... Es esencial la frescura, protección e higiene alimentaria. Desde que se hornean hasta que se consumen, tienen que llegar en perfectas condiciones. El tránsito de la cadena de suministro es muy importante.</blockquote>
+                  <figcaption>Panaderia y Pasteleria</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tm-bg-overlay"></div>
+    </section>
 
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
@@ -438,7 +462,8 @@ Ubicados en barcelona, atendemos eficazmente el mercado europeo, directamente o 
         // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.30, false);
         background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
+        background_image_parallax_2($("#testimonials"), 0.80);
+		background_image_parallax_2($("#valores"), 0.80);  
         
         // Handle window resize
         window.addEventListener('resize', function(){
@@ -488,6 +513,35 @@ Ubicados en barcelona, atendemos eficazmente el mercado europeo, directamente o 
         });
 
         $('.tm-testimonials-carousel').slick({
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            }, 
+            {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1
+              }                 
+            }
+          ]
+        });
+		
+		$('.tm-valores-carousel').slick({
           dots: true,
           prevArrow: false,
           nextArrow: false,
