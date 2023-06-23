@@ -323,7 +323,7 @@ blockquote {
 /* valores */
 #valores {
   color: white;
-  background-image: url(../img/diversos_productos_peque.jpg);
+  background-image: url(../img/valores.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -332,7 +332,7 @@ blockquote {
 
 @media (max-width: 991px) {
   #valores {
-    background-image: url(../img/diversos_productos_peque.jpg);
+    background-image: url(../img/valores.jpg);
   }
 }
 
@@ -415,6 +415,20 @@ blockquote {
 .tm-testimonials-carousel .slick-dots li button:hover:before,
 .tm-testimonials-carousel .slick-dots li button:focus:before,
 .tm-testimonials-carousel .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+}
+
+.tm-valores-carousel .slick-dots li button:before {
+  color: white;
+  opacity: 0.5;
+}
+
+.tm-valores-carousel .slick-dots li button:hover:before,
+.tm-valores-carousel .slick-dots li button:focus:before,
+.tm-valores-carousel .slick-dots li.slick-active button:before {
   color: white;
   opacity: 1;
 }
