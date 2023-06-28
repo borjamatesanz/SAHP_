@@ -359,7 +359,7 @@ blockquote {
 }
 
 .tm-valores-item {
-  max-width: 950px;
+  max-width: 100%;
   margin-left: 55px;
   margin-right: 55px;
 }
