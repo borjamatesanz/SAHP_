@@ -377,7 +377,7 @@ blockquote {
 
 /* certificaciones */
 #certificaciones {
-  color: white;
+  color: black;
   background-image: url(../img/DALL_e_BRC.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -420,7 +420,7 @@ blockquote {
 }
 
 .tm-certificaciones-item img {
-  border-radius: 50%;
+  border-radius: 5%;
   margin-bottom: 55px;
 }
 
