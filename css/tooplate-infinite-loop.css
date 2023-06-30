@@ -378,7 +378,7 @@ blockquote {
 /* certificaciones */
 #certificaciones {
   color: white;
-  background-image: url(../img/valores.jpg);
+  background-image: url(../img/DALL_e_BRC.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -387,7 +387,7 @@ blockquote {
 
 @media (max-width: 991px) {
   #certificaciones {
-    background-image: url(../img/valores.jpg);
+    background-image: url(../DALL_e_BRC.jpg);
   }
 }
 
