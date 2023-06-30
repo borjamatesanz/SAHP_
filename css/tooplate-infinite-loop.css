@@ -570,8 +570,8 @@ blockquote {
 
 figure.effect-honey {
   background: #4a3753;
-  width: 300px;
-  height: 300px;
+  /*width: 300px;
+  height: 300px;*/
   max-width: 100%;
 }
 
