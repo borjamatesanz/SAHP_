@@ -377,7 +377,7 @@ blockquote {
 
 /* certificaciones */
 #certificaciones {
-  color: #000;
+  color: #3f4d5f;
   background-image: url(../img/DALL_e_BRC.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -399,7 +399,7 @@ blockquote {
 .tm-bg-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(20, 70, 80, 0.2);
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   left: 0;
@@ -426,7 +426,7 @@ blockquote {
 
 .tm-certificaciones-item figcaption {
   text-align: right;
-  font-style: italic;
+  font-style: bold;
   font-size: 1.1rem;
 }
 
