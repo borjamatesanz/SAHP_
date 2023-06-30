@@ -355,7 +355,7 @@ blockquote {
 
 .tm-valores-carousel {
   max-width: 1050px;
-  margin: 0 auto;
+  margin: -85px;
 }
 
 .tm-valores-item {
