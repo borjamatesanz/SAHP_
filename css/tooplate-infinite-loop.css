@@ -377,7 +377,7 @@ blockquote {
 
 /* certificaciones */
 #certificaciones {
-  color: black;
+  color: #000;
   background-image: url(../img/DALL_e_BRC.jpg);
   background-size: cover;
   background-repeat: no-repeat;
