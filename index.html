@@ -515,6 +515,24 @@ https://www.tooplate.com/view/2117-infinite-loop
                 <div class="contact-item">&nbsp;</div>
             
             </div>
+			
+			<!-- Chatbot pop-up window -->
+			<div id="chatbotWindow" style="display: none;">
+				<!-- Chatbot content -->
+				<div id="chatbotContent">
+				<!-- Chat messages will be dynamically added here -->
+				</div>
+
+				<!-- Chat input -->
+				<input type="text" id="chatInput" placeholder="Type your message..." />
+
+				<!-- Send button -->
+				<button id="sendButton">Send</button>
+			</div>
+  </div>
+
+  <!-- Chatbot button -->
+  <button id="chatbotButton">Chat</button>
             
             
         </div><!-- row ending -->
@@ -750,6 +768,44 @@ https://www.tooplate.com/view/2117-infinite-loop
         ]
         });
       });
+	  
+	  // JavaScript code to handle the chatbot functionality
+		var chatbotButton = document.getElementById('chatbotButton');
+		var chatbotWindow = document.getElementById('chatbotWindow');
+		var chatInput = document.getElementById('chatInput');
+		var chatbotContent = document.getElementById('chatbotContent');
+		
+		chatbotButton.addEventListener('click', function() {
+		chatbotWindow.style.display = 'block';
+		});
+		
+		function sendMessage() {
+		var message = chatInput.value;
+		// Handle the user's message and generate a response
+		var response = generateResponse(message);
+		// Display the user's message and the chatbot's response
+		var messageElement = document.createElement('div');
+		messageElement.classList.add('message');
+		messageElement.innerText = message;
+		chatbotContent.appendChild(messageElement);
+		
+		var responseElement = document.createElement('div');
+		responseElement.classList.add('response');
+		responseElement.innerText = response;
+		chatbotContent.appendChild(responseElement);
+		
+		// Clear the input field
+		chatInput.value = '';
+		}
+		
+		function generateResponse(message) {
+		// Logic to generate a response based on the user's message
+		// Replace this with your chatbot's logic
+		return 'This is the chatbot response for: ' + message;
+		}
+		
+		document.getElementById('sendButton').addEventListener('click', sendMessage);
+
     </script>
   </body>
 </html>
