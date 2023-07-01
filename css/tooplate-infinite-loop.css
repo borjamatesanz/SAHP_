@@ -823,3 +823,81 @@ p {
     margin: 0;
   }
 }
+
+/* Chatbot window styles */
+#chatbotWindow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: none;
+}
+
+/* Chatbot content styles */
+#chatbotContent {
+  height: 250px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+/* Chat input styles */
+#chatInput {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Send button styles */
+#sendButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color: #45a049;
+}
+
+#sendButton:focus {
+  outline: none;
+}
+
+/* Chatbot button styles */
+#chatbotButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#chatbotButton:hover {
+  background-color: #45a049;
+}
+
+#chatbotButton:focus {
+  outline: none;
+}
+
