@@ -641,13 +641,33 @@ figure.effect-honey:hover h2 i {
   color: white;
   background-color: #001828;
   background-image: url(../img/packing_tomate_tangerine.jpg);
-  background-position: center;
+  background-size: cover;
+  /*background-position: center;*/
   background-repeat: no-repeat;
-  min-height: 980px;
+  background-size: 100%;
+  /*min-height: 980px;*/
   position: relative;
-  padding-bottom: 50px;
-  padding-top: 100px;
+  /*padding-bottom: 50px;
+  padding-top: 100px;*/
 }
+
+  /*color: #3f4d5f;
+  background-image: url(../img/DALL_e_BRC.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  #certificaciones {
+    background-image: url(../DALL_e_BRC.jpg);
+  }
+}*/
+
+
+
+
 
 .contact-item {
   margin-left: 20px;
