@@ -506,8 +506,8 @@ blockquote {
 .grid figure img {
   position: relative;
   display: block;
-  min-height: 400px;
-  max-width: 400px;
+  min-height: 100%;
+  max-width: 100%;
   opacity: 0.8;
 }
 
