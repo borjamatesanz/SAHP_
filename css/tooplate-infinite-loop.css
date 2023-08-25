@@ -326,7 +326,7 @@ blockquote {
 }
 
 .tm-testimonial-item:hover {
-  transform: scale(1.05); /* Scale up by 5% on hover */
+  transform: scale(1.5); /* Scale up by 50% on hover */
 }
 
 /* valores */
