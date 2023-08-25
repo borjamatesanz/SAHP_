@@ -11,6 +11,23 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+	
+	<title>Elegant Image Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 <!--
 Tooplate 2117 SAHP Packaging
 https://www.tooplate.com/view/2117-infinite-loop
@@ -338,6 +355,15 @@ https://www.tooplate.com/view/2117-infinite-loop
           </div>
       </div>
     </section>
+	
+	<!--Productos 2-->
+	
+	<div class="gallery">
+        <img src="img/tomates_4_compacto.jpg" alt="Image 1">
+        <img src="img/Tomates_2_Compacto.jpg" alt="Image 2">
+        <img src="img/paraguayo_4_compacto2.jpg" alt="Image 3">
+        <!-- Add more images here -->
+    </div>
 	
 	<!--Acabados-->
 	
