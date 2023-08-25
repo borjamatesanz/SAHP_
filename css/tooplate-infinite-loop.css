@@ -454,6 +454,7 @@ blockquote {
 }
 
 .tm-gallery-item {
+	width:100%
   margin: 0 15px;
 }
 
