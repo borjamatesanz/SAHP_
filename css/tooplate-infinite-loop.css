@@ -545,6 +545,12 @@ blockquote {
   height: 100%;
 }
 
+.my-custom-image {
+    width: 350px;
+    /* You can also set the height if needed */
+    /* height: auto; */
+}
+
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .grid figure figcaption > a {
