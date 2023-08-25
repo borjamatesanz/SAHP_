@@ -322,9 +322,7 @@ blockquote {
 
 /* Add the hover animation to the testimonial items */
 .tm-testimonial-item {
-  width: 100px;
-  height: 100px;
-  background-color: #3498db;
+
   transition: transform 0.3s ease;
 }
 
@@ -452,11 +450,11 @@ blockquote {
 
 .tm-gallery-container {
   padding-top: 70px;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 .tm-gallery-item {
-  margin: 0 25px;
+  margin: 0 15px;
 }
 
 .slick-dots {
