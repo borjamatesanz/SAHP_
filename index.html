@@ -17,6 +17,20 @@ https://www.tooplate.com/view/2117-infinite-loop
 -->
 
   </head>
+  <!-- Cookie Consent Pop-up -->
+	<div id="cookieConsent" class="alert alert-dismissible fade show">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-8">
+			This website uses cookies to ensure you get the best experience on our website.
+		</div>
+		<div class="col-md-4">
+			<button id="acceptCookies" class="btn btn-primary btn-sm">Got it!</button>
+		</div>
+		</div>
+	</div>
+	</div>
+
   <body>    
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
@@ -801,6 +815,51 @@ https://www.tooplate.com/view/2117-infinite-loop
 		}
 		
 		document.getElementById('sendButton').addEventListener('click', sendMessage);
+
+		
+// Function to set a cookie
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+// Function to get a cookie
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) === " ") c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+// Function to check and display cookie consent
+function checkCookieConsent() {
+  var consentCookie = getCookie("cookieConsent");
+  if (!consentCookie) {
+    document.getElementById("cookieConsent").style.display = "block";
+  }
+}
+
+// Function to hide the cookie consent on accept
+function acceptCookies() {
+  setCookie("cookieConsent", "accepted", 365); // Cookie expires after 365 days
+  document.getElementById("cookieConsent").style.display = "none";
+}
+
+// Event listener for the "Got it!" button
+document.getElementById("acceptCookies").addEventListener("click", acceptCookies);
+
+// Check and display cookie consent when the page loads
+window.addEventListener("load", checkCookieConsent);
+
 
     </script>
   </body>
