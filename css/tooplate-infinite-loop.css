@@ -320,6 +320,15 @@ blockquote {
   font-size: 1.1rem;
 }
 
+/* Add the hover animation to the testimonial items */
+.tm-testimonial-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.tm-testimonial-item:hover {
+  transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
 /* valores */
 #valores {
   color: white;
