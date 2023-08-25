@@ -322,11 +322,14 @@ blockquote {
 
 /* Add the hover animation to the testimonial items */
 .tm-testimonial-item {
-  transition: transform 0.3s ease-in-out;
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  transition: transform 0.3s ease;
 }
 
 .tm-testimonial-item:hover {
-  transform: scale(1.5); /* Scale up by 50% on hover */
+  transform: scale(1.2); /* Scale up by 50% on hover */
 }
 
 /* valores */
