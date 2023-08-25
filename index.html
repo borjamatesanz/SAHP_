@@ -28,6 +28,37 @@
             transform: scale(1.1);
         }
     </style>
+	
+	<title>Image Slider</title>
+    <style>
+        .slider {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .slider img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        .slider img:first-child {
+            display: block;
+        }
+        .slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+    </style>
 <!--
 Tooplate 2117 SAHP Packaging
 https://www.tooplate.com/view/2117-infinite-loop
@@ -369,6 +400,44 @@ https://www.tooplate.com/view/2117-infinite-loop
         <img src="img/paraguayo_4_compacto2.jpg" alt="Image 3">
         <!-- Add more images here -->
     </div>
+	
+	<!--Productos 3-->
+	
+	 <div class="slider">
+        <img src="img/tomates_4_compacto.jpg" alt="Slide 1">
+        <img src="img/Tomates_2_Compacto.jpg" alt="Slide 2">
+        <img src="img/paraguayo_4_compacto2.jpg" alt="Slide 3">
+        <!-- Add more slides here -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function showSlides(n) {
+            const slides = document.querySelectorAll(".slider img");
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+        
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+        prevButton.addEventListener("click", () => plusSlides(-1));
+        nextButton.addEventListener("click", () => plusSlides(1));
+    </script>
 	
 	<!--Acabados-->
 	
