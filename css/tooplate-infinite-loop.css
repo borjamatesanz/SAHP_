@@ -330,6 +330,11 @@ blockquote {
   transform: scale(1.2); /* Scale up by 50% on hover */
 }
 
+.product-image {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* valores */
 #valores {
   color: white;
