@@ -335,6 +335,10 @@ blockquote {
     height: auto; /* Maintain aspect ratio */
 }
 
+.image-border {
+    border: 1.5px solid #000; /* Color y grosor del borde */
+}
+
 /* valores */
 #valores {
   color: white;
